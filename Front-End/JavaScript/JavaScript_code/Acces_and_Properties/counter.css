@@ -1,0 +1,50 @@
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: white;
+  user-select: none;
+}
+
+.counter-container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px 60px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  width: 320px;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+#countValue {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#countBtn {
+  background: #ff6f61;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#countBtn:hover {
+  background: #ff4a3d;
+}
