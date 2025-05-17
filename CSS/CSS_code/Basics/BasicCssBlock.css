@@ -1,0 +1,99 @@
+  /* ===============================
+       Global Styling
+    =============================== */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ===============================
+       Section Styles
+    =============================== */
+    header, nav, section, article, aside, footer {
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    /* ===============================
+       Header Section
+    =============================== */
+    header {
+      background-color: #4a90e2;
+      color: white;
+    }
+
+    hgroup h1 {
+      margin: 0;
+    }
+
+    /* ===============================
+       Navigation Bar
+    =============================== */
+    nav {
+      background-color: #d1e0f0;
+    }
+
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: bold;
+    }
+
+    /* ===============================
+       Main Section Layout
+    =============================== */
+    section {
+      background-color: #ffffff;
+      display: flex;
+      gap: 20px;
+    }
+
+    /* ===============================
+       Article Content
+    =============================== */
+    article {
+      flex: 3;
+      background-color: #eaf6ff;
+    }
+
+    /* ===============================
+       Aside Content
+    =============================== */
+    aside {
+      flex: 1;
+      background-color: #fef3bd;
+    }
+
+    /* ===============================
+       Figure and Caption Styling
+    =============================== */
+    figure {
+      margin: 0;
+      text-align: center;
+    }
+
+    figcaption {
+      font-style: italic;
+      color: #555;
+    }
+
+    /* ===============================
+       Highlighted Text
+    =============================== */
+    mark {
+      background-color: yellow;
+      font-weight: bold;
+    }
+
+    /* ===============================
+       Footer Styling
+    =============================== */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+    }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Table Layout Fixed vs Auto</title>
+  <link rel="stylesheet" href="table_layout.css" />
+</head>
+<body>
+
+  <h2>Table with <code>table-layout: fixed;</code></h2>
+  <table class="fixed-layout">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Smartphone</td>
+        <td>A powerful device with a very long description that normally would affect the column width.</td>
+        <td>$599</td>
+      </tr>
+      <tr>
+        <td>Laptop</td>
+        <td>Lightweight and fast laptop for everyday use.</td>
+        <td>$1200</td>
+      </tr>
+      <tr>
+        <td>Headphones</td>
+        <td>Noise-cancelling with crystal-clear sound.</td>
+        <td>$199</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Table with <code>table-layout: auto;</code> (default)</h2>
+  <table class="auto-layout">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Smartphone</td>
+        <td>A powerful device with a very long description that normally would affect the column width.</td>
+        <td>$599</td>
+      </tr>
+      <tr>
+        <td>Laptop</td>
+        <td>Lightweight and fast laptop for everyday use.</td>
+        <td>$1200</td>
+      </tr>
+      <tr>
+        <td>Headphones</td>
+        <td>Noise-cancelling with crystal-clear sound.</td>
+        <td>$199</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Visibility and Display Demo</title>
+  <link rel="stylesheet" href="visibility_display.css" />
+</head>
+<body>
+
+  <h1>Visibility and Display Properties</h1>
+
+  <section>
+    <h2>Visibility Examples</h2>
+    <p class="visible">This paragraph is <strong>visible</strong>.</p>
+    <p class="hidden">This paragraph is <strong>hidden (visibility: hidden)</strong> — it takes space but is invisible.</p>
+    <table border="1" class="collapse-table">
+      <tr>
+        <th>Header 1</th>
+        <th class="collapse">Header 2 (collapsed)</th>
+        <th>Header 3</th>
+      </tr>
+      <tr>
+        <td>Row 1, Cell 1</td>
+        <td class="collapse">Row 1, Cell 2 (collapsed)</td>
+        <td>Row 1, Cell 3</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Display Examples</h2>
+
+    <div class="none">This div has <strong>display: none</strong> and is not visible or taking space.</div>
+
+    <span class="inline">This span has <strong>display: inline</strong> — flows inline.</span>
+    <div class="block">This div has <strong>display: block</strong> — starts on a new line.</div>
+
+    <div class="contents">
+      <p>This div has <strong>display: contents</strong> — it doesn't generate a box itself, but its children do.</p>
+    </div>
+
+    <ul>
+      <li class="list-item">This li has <strong>display: list-item</strong> — default for li with bullet.</li>
+      <li class="inline-list-item">This li has <strong>display: inline</strong> — no bullet, inline with text.</li>
+    </ul>
+
+  </section>
+
+</body>
+</html>

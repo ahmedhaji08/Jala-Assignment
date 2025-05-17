@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pseudo Classes & Elements Example</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 20px;
+      background-color: #f8f9fa;
+    }
+
+    h1::first-letter {
+      font-size: 2em;
+      color: #007bff;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007bff;
+      position: relative;
+    }
+
+    a::after {
+      content: " 🔗";
+      font-size: 0.9em;
+    }
+
+    a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    ul li:first-child {
+      color: green;
+      font-weight: bold;
+    }
+
+    ul li:nth-child(odd) {
+      background-color: #e9ecef;
+    }
+
+    input:focus {
+      outline: 2px solid #007bff;
+      background-color: #fff3cd;
+    }
+
+    .btn {
+      background-color: #17a2b8;
+      color: white;
+      padding: 10px 20px;
+      display: inline-block;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #117a8b;
+    }
+
+    .quote::before {
+      content: "“";
+      font-size: 2em;
+      vertical-align: top;
+      color: #6c757d;
+    }
+
+    .quote::after {
+      content: "”";
+      font-size: 2em;
+      vertical-align: bottom;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Web Page</h1>
+
+  <p>This is a <a href="https://w3schools.com" target="_blank">sample link</a> with a pseudo-element icon.</p>
+
+  <ul>
+    <li>First item (styled with `:first-child`)</li>
+    <li>Second item</li>
+    <li>Third item</li>
+  </ul>
+
+  <p>
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" placeholder="Focus me to see effect" />
+  </p>
+
+  <blockquote class="quote">
+    The future belongs to those who believe in the beauty of their dreams.
+  </blockquote>
+
+  <a href="#" class="btn">Hover Me</a>
+
+</body>
+</html>

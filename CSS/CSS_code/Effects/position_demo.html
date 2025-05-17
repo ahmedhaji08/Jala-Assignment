@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Positioning Demo</title>
+  <link rel="stylesheet" href="position_demo.css" />
+</head>
+<body>
+
+  <h1>CSS Positioning Types</h1>
+
+  <div class="container">
+
+    <div class="box static">
+      <p>Static (default)</p>
+    </div>
+
+    <div class="box relative">
+      <p>Relative (shifted 20px right & down)</p>
+    </div>
+
+    <div class="box absolute-container">
+      <div class="box absolute">
+        <p>Absolute (positioned 20px from top & right of container)</p>
+      </div>
+    </div>
+
+    <div class="box fixed">
+      <p>Fixed (always visible top-left corner)</p>
+    </div>
+
+    <div class="sticky-wrapper">
+      <div class="box sticky">
+        <p>Sticky (sticks at 0px from top when scrolling)</p>
+      </div>
+    </div>
+
+    <p>Scroll down to see sticky and fixed elements in action.</p>
+    <div style="height: 800px;"></div> <!-- Spacer for scroll -->
+  </div>
+
+</body>
+</html>
