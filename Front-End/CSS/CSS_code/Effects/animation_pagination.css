@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background: #f0f4f8;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+/* Keyframes for animation */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); background-color: #3498db; }
+  50% { transform: scale(1.1); background-color: #2980b9; }
+}
+
+/* Animated boxes */
+.animated-box {
+  width: 200px;
+  margin: 20px auto;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #3498db;
+  animation-name: pulse;
+  animation-fill-mode: forwards;
+}
+
+/* Slow animation, infinite iterations, delayed start */
+.slow {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.delay {
+  animation-delay: 1.5s;
+}
+
+/* Fast animation, finite iterations, no delay */
+.fast {
+  animation-duration: 1.5s;
+  animation-iteration-count: 3;
+}
+
+.no-delay {
+  animation-delay: 0s;
+}
+
+/* Pagination styles */
+.pagination {
+  margin-top: 50px;
+  font-size: 18px;
+  user-select: none;
+}
+
+/* Pagination with spaces */
+.spaced .page {
+  display: inline-block;
+  margin: 0 12px;
+  padding: 8px 15px;
+  background: #ddd;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.spaced .page:hover {
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+/* Pagination without spaces */
+.nospace .page {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #ddd;
+  border-left: 1px solid white;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.nospace .page:first-child {
+  border-left: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.nospace .page:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.nospace .page:hover {
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+}

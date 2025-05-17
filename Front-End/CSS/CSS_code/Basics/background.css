@@ -1,0 +1,38 @@
+body {
+  /* Set a fallback background color */
+  background-color: #f0f0f0;
+
+  /* Set a background image */
+  background-image: url('1684.png');
+
+  /* Prevent the background from scrolling */
+  background-attachment: fixed;
+
+  /* Position the image in the center */
+  background-position: center;
+
+  /* Scale the background image */
+  background-size: cover;
+
+  /* Avoid repeating the image */
+  background-repeat: no-repeat;
+
+  /* Make sure body takes full height */
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 1px 1px 3px #000;
+}

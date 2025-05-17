@@ -1,0 +1,75 @@
+/* Base body style */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+}
+
+/* Wrapper that controls background on hover */
+.table-wrapper {
+  transition: background-color 0.5s ease;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Change body background when wrapper is hovered */
+.table-wrapper:hover body,
+.table-wrapper:hover {
+  background-color: #ffeaa7;
+}
+
+/* Since we can’t select body from .table-wrapper:hover in CSS,
+   we use this trick: set a fixed background on html and
+   .table-wrapper:hover changes a full-screen pseudo element */
+
+html {
+  height: 100%;
+  background-color: #f0f0f0;
+  transition: background-color 0.5s ease;
+  position: relative;
+  z-index: 0;
+}
+
+.table-wrapper:hover ~ html {
+  background-color: #ffeaa7;
+}
+
+/* But this won’t work since CSS can’t select parent or siblings of hovered */
+
+ /* So fallback: we change background of wrapper itself */
+.table-wrapper:hover {
+  background-color: #ffeaa7;
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  border: 3px solid black;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  width: 600px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  background-color: white;
+}
+
+table:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+th, td {
+  padding: 15px 20px;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+th {
+  background-color: #0984e3;
+  color: white;
+}
